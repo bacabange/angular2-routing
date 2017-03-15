@@ -17,7 +17,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             styles: ["\n    \n  "],
-            template: "\n    <div class=\"jumbotron text-center\">\n      <h1>The App Lives!</h1>\n      <p>{{ message }}</p>\n    </div>\n  "
+            template: "\n    <header>\n      <nav class=\"navbar navbar-default\">\n        <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n            <a class=\"navbar-brand\" href=\"#\">Brand</a>\n          </div>\n\n          <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <ul class=\"nav navbar-nav\">\n              <li><a href=\"#\">Home</a></li>\n              <li><a href=\"#\">About</a></li>\n              <li><a href=\"#\">Contact</a></li>\n            </ul>\n          </div>\n        </div>\n      </nav>\n    </header>\n\n    <main>\n      <router-outlet></router-outlet>\n    </main>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
