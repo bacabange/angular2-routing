@@ -2,13 +2,14 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" routerLink="/">Brand</a>
+        <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Brand</a>
       </div>
 
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/']">Home</a></li>
-          <li><a [routerLink]="['/about']">About</a></li>
-          <li><a [routerLink]="['/contact']">Contact</a></li>
+          <li><a routerLink="/" routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+          <li><a [routerLink]="['/about']" routerLinkActive="active">About</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact</a></li>
         </ul>
     </div>
   </nav>
